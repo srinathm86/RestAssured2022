@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-04T18:04:51 CDT" name="Default suite" finished-at="2022-07-04T18:04:54 CDT" duration-ms="2043">
+  <suite started-at="2022-07-04T23:28:47 CDT" name="Default suite" finished-at="2022-07-04T23:28:49 CDT" duration-ms="1960">
     <groups>
     </groups>
-    <test started-at="2022-07-04T18:04:51 CDT" name="Default test" finished-at="2022-07-04T18:04:54 CDT" duration-ms="2043">
-      <class name="bookerapi.Bookerget">
-        <test-method signature="getReq()[pri:0, instance:bookerapi.Bookerget@41fecb8b]" started-at="2022-07-04T18:04:52 CDT" name="getReq" finished-at="2022-07-04T18:04:54 CDT" duration-ms="2002" status="PASS">
+    <test started-at="2022-07-04T23:28:47 CDT" name="Default test" finished-at="2022-07-04T23:28:49 CDT" duration-ms="1960">
+      <class name="bookerapi.Pathparameter">
+        <test-method signature="pathPerimeter2()[pri:0, instance:bookerapi.Pathparameter@41fecb8b]" started-at="2022-07-04T23:28:47 CDT" name="pathPerimeter2" finished-at="2022-07-04T23:28:49 CDT" duration-ms="1931" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getReq -->
-      </class> <!-- bookerapi.Bookerget -->
+        </test-method> <!-- pathPerimeter2 -->
+      </class> <!-- bookerapi.Pathparameter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

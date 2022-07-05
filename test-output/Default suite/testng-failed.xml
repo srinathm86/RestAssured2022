@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="bookerapi.Bookerget">
+      <class name="bookerapi.Pathparameter">
         <methods>
-          <include name="getReq"/>
+          <include name="pathPerimeter3"/>
         </methods>
-      </class> <!-- bookerapi.Bookerget -->
+      </class> <!-- bookerapi.Pathparameter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
