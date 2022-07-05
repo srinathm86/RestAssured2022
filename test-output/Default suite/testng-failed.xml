@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="bookerapi.Patchreq">
+      <class name="apiTests.Multiplebookings">
         <methods>
-          <include name="pathPerimeter4"/>
+          <include name="common"/>
+          <include name="bookin2"/>
         </methods>
-      </class> <!-- bookerapi.Patchreq -->
+      </class> <!-- apiTests.Multiplebookings -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

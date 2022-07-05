@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-05T00:30:11 CDT" name="Default suite" finished-at="2022-07-05T00:30:12 CDT" duration-ms="1857">
+  <suite started-at="2022-07-05T12:40:27 CDT" name="Default suite" finished-at="2022-07-05T12:40:29 CDT" duration-ms="2524">
     <groups>
     </groups>
-    <test started-at="2022-07-05T00:30:11 CDT" name="Default test" finished-at="2022-07-05T00:30:12 CDT" duration-ms="1857">
-      <class name="bookerapi.Patchreq">
-        <test-method signature="pathPerimeter4()[pri:0, instance:bookerapi.Patchreq@41fecb8b]" started-at="2022-07-05T00:30:11 CDT" name="pathPerimeter4" finished-at="2022-07-05T00:30:12 CDT" duration-ms="1819" status="FAIL">
+    <test started-at="2022-07-05T12:40:27 CDT" name="Default test" finished-at="2022-07-05T12:40:29 CDT" duration-ms="2524">
+      <class name="apiTests.Multiplebookings">
+        <test-method is-config="true" signature="common()[pri:0, instance:apiTests.Multiplebookings@7bd4937b]" started-at="2022-07-05T12:40:27 CDT" name="common" finished-at="2022-07-05T12:40:28 CDT" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- common -->
+        <test-method signature="bookin1()[pri:0, instance:apiTests.Multiplebookings@7bd4937b]" started-at="2022-07-05T12:40:28 CDT" name="bookin1" finished-at="2022-07-05T12:40:29 CDT" duration-ms="1363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookin1 -->
+        <test-method signature="bookin2()[pri:0, instance:apiTests.Multiplebookings@7bd4937b]" started-at="2022-07-05T12:40:29 CDT" name="bookin2" finished-at="2022-07-05T12:40:29 CDT" duration-ms="293" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Expected status code <200> but was <400>.
+Expected status code <200> but was <404>.
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <400>.
+Expected status code <200> but was <404>.
 
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -30,9 +38,6 @@ at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(Abstrac
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -41,14 +46,9 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:127)
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -62,7 +62,7 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at bookerapi.Patchreq.pathPerimeter4(Patchreq.java:28)
+at apiTests.Multiplebookings.bookin2(Multiplebookings.java:84)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,8 +96,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pathPerimeter4 -->
-      </class> <!-- bookerapi.Patchreq -->
+        </test-method> <!-- bookin2 -->
+      </class> <!-- apiTests.Multiplebookings -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
