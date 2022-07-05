@@ -11,7 +11,7 @@ import io.restassured.http.ContentType;
 public class Pathparameter 
 {
 
-	//firstway
+	//firstway 123
 	
 	  @Test public void pathPerimeter() { RestAssured .given() .log() .all()
 	  .baseUri("https://restful-booker.herokuapp.com/")
